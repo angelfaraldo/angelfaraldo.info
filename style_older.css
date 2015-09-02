@@ -40,27 +40,19 @@ body {
 	z-index:2;
 }
 
-#col_music {
+#col_video {
 	position: relative;
-	padding: 0px 1% 0px 0px;
+	padding: 0px 2% 0px 0px;
 	float: left;
 	width: 32%;
 }
 
-#col_video {
-	position: relative;
-	padding: 0px 1% 0px 0px;
-	float: left;
-	width: 33%;
-}
-
-#col_pictures {
+#col_music {
 	position: relative;
 	padding: 0px 0px 0px 0px;
 	float: right;
-	width: 33%;
+	width: 32%;
 }
-
 
 #bottom {
 	position: relative;
@@ -77,6 +69,26 @@ body {
 	width: 100%;
 }
 
+/*
+p.list {
+	color: #BBBBBB;
+	font-family: arial, sans-serif;
+	letter-spacing: -1px;
+	font-size: 90%;
+	font-weight: normal;
+	text-align: justify;
+	text-transform: lowercase;
+
+}
+*/
+
+/*
+img.pic {
+	max-width: 100%;
+	min-width: 1%;
+	padding-bottom: 10px;
+}
+*/
 
 /* FLOATING ELEMENTS */
 
@@ -110,6 +122,12 @@ body {
   top: 0;
 }
 
+/*
+img.foot {
+	width: 75px;
+	height: 15px;
+}
+*/
 
 /* TEXT */
 
@@ -135,13 +153,11 @@ h2 {
 	position: relative;
 }
 
-/*
 h3 {
 	color: #dddddd;
 	font-style: bold;
 	text-transform: capitalize;
 }
-*/
 
 p {
 	color: #999999;
@@ -164,6 +180,15 @@ ps2 {
 	background-color: #888888;
 }
 
+/*
+ul {
+	color: #AAAAAA;
+	font-size: 110%;
+	text-transform: uppercase;
+}
+*/
+
+/*================LINKS================*/
 
 /* EVENT LINKS */
 
@@ -208,3 +233,23 @@ a:hover {
 	background-color: #ffdd00;
 	text-transform: uppercase;
 }
+
+
+
+/* CC LINK
+
+#pie a:link {
+	background-color: transparent;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#pie a:visited {
+	background-color: transparent;
+}
+
+#pie a:hover {
+	color: #111111;
+}
+ */

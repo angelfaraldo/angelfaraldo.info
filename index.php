@@ -24,7 +24,7 @@
 		}
 		?>
 
-		<div id="side">
+		<div id="side_events">
 			<?php
 			lista_de_eventos($lengua);
 			?>
@@ -36,57 +36,95 @@
 				about_me($lengua);
 				?>
 
-			<div id="side2">
-				<?php
-				videos($lengua);
-				?>
-
-				<div class="aspect-ratio">
-					<iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe>
-				</div>
-
-				<div class="aspect-ratio">
-					<iframe src="//player.vimeo.com/video/19287891" width="250" height="140" frameborder="0"></iframe>
-				</div>
-			</div>
-
-			<div id="side2">
-				<?php
-				fotos($lengua);
-				?>
-
-				<div class="aspect-ratio">
-					<iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe>
-				</div>
-
-				<div class="aspect-ratio">
-					<iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe>
-				</div>
-
-				<div class="aspect-ratio">
-					<iframe src="//player.vimeo.com/video/19287891" width="250" height="140" frameborder="0"></iframe>
-				</div>
-			</div>
-
-			<div id="side2">
+			<div id="col_music">
 				<?php
 				musica($lengua);
 				?>
 
 				<div class="aspect-ratio">
-					<iframe  style="border: 0; width: 200px; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=1947005916/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" frameborder="0" width="50%" height="100%"></iframe>
+					<iframe  style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=1947005916/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" frameborder="0" width="100%" height="100%"></iframe>
 				</div>
 			</div>
-		</div>
-		<?php
-			//<h3>City Sondols</h3>
-			// <img class="pic" src="pics/pic2.jpg">
-			//mi_contacto($lengua);
-			?>
 
-		<hr>
-			<div id=pie>
-				<img class="foot" alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"/>
+
+			<div id="col_video">
+				<?php
+				videos($lengua);
+				?>
+
+				<div class="aspect-ratio">
+					<!--Rueda -->
+					<iframe src="//player.vimeo.com/video/95139621" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+				<div class="aspect-ratio">
+					<!--Retro Twain -->
+					<iframe src="//player.vimeo.com/video/71256288" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+				<div class="aspect-ratio">
+					<!--FS2C -->
+					<iframe src="//player.vimeo.com/video/32861140" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+				<div class="aspect-ratio">
+					<!--FS3A -->
+					<iframe src="//player.vimeo.com/video/19287891" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+				<div class="aspect-ratio">
+					<!--Disparos -->
+					<iframe src="//player.vimeo.com/video/137601148" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+				<div class="aspect-ratio">
+					<!--Memoria -->
+					<iframe src="//player.vimeo.com/video/32792262" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+				<div class="aspect-ratio">
+					<!--Zubian -->
+					<iframe src="//player.vimeo.com/video/19286080" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+				<div class="aspect-ratio">
+					<!--FS2a -->
+					<iframe src="//player.vimeo.com/video/18492534" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+			</div>
+
+			<div id="col_pictures">
+				<?php
+				fotos($lengua);
+				//<h3>City Sondols</h3>
+				// <img class="pic" src="pics/pic2.jpg">
+				?>
+
+				<div class="aspect-ratio">
+					<iframe src="/pics/CitySondols2.jpeg" width="90%" height="90%" frameborder="0"></iframe>
+					<p>City Sondols</p>
+				</div>
+
+				<div class="aspect-ratio">
+					<iframe src="//player.vimeo.com/video/32861140" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+				<div class="aspect-ratio">
+					<iframe src="//player.vimeo.com/video/19287891" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+
+			</div>
+
+			<div id="bottom">
+				<?php
+				mi_contacto($lengua);
+				?>
+			</div>
+			
+			<div id="foot">
+				<hr>
+				<img alt="Creative Commons License" style="border:0; width:75px; height:15px" src="http://i.creativecommons.org/l/by/4.0/80x15.png"/>
 			</div>
 		</div>
 	</body>

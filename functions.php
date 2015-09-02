@@ -74,30 +74,24 @@ function videos($lang='EN'){
 function fotos($lang='EN'){
 	if ($lang == 'ES'){
 		echo utf8_encode("<h2 id='obra'>im&aacute;genes</h2>");
-		//echo "<p>En construcci&oacute;n. Entretanto puedes visitar mi <a href=http://www.angelfaraldo.info/site/intro/intro.html> anterior p&aacute;gina web</a>.</p>";
 	}
 	if ($lang == 'GA'){
-		echo utf8_encode("<h2 id='obra'>im&aacute;xes</h2>");
-		//echo "<p>En construcci&oacute;n. Entretanto podes visitar a mi&ntilde;a <a href=http://www.angelfaraldo.info/site/intro/intro.html>antiga p&aacute;xina web</a>.</p>";
+		echo utf8_encode("<h2 id='obra'>imaxes</h2>");
 	}
 	if ($lang == 'EN'){
 		echo utf8_encode("<h2 id='obra'>pictures</h2>");
-		//echo "<p>Under construction. In the meantime you can have a look at <a href=http://www.angelfaraldo.info/site/intro/intro.html>my previous website</a>.</p>";
 	}
 }
 
 function musica($lang='EN'){
 	if ($lang == 'ES'){
 		echo utf8_encode("<h2 id='obra'>m&uacute;sica</h2>");
-		//echo "<p>En construcci&oacute;n. Entretanto puedes visitar mi <a href=http://www.angelfaraldo.info/site/intro/intro.html> anterior p&aacute;gina web</a>.</p>";
 	}
 	if ($lang == 'GA'){
 		echo utf8_encode("<h2 id='obra'>m&uacute;sica</h2>");
-		//echo "<p>En construcci&oacute;n. Entretanto podes visitar a mi&ntilde;a <a href=http://www.angelfaraldo.info/site/intro/intro.html>antiga p&aacute;xina web</a>.</p>";
 	}
 	if ($lang == 'EN'){
 		echo utf8_encode("<h2 id='obra'>music</h2>");
-		//echo "<p>Under construction. In the meantime you can have a look at <a href=http://www.angelfaraldo.info/site/intro/intro.html>my previous website</a>.</p>";
 	}
 }
 
@@ -112,5 +106,4 @@ function mi_contacto($lang='EN'){
 		echo utf8_encode("<h2 id='contacto'>contact</h2>");
 		echo "<p>angelfaraldo [at] gmail [dot] com</p>";}
 }
-
 ?>
