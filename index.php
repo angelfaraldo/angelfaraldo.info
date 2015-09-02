@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-	  <meta charset="utf-8">
-  <head>
+	<meta charset="utf-8">
+	<head>
 		<title>&Aacute;ngel Faraldo</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<?php
 		include 'functions.php';
 		?>
-  </head>
+	</head>
 
 	<body>
 		<div id='lang'>
@@ -25,10 +25,10 @@
 		?>
 
 		<div id="side">
-					<?php
-					lista_de_eventos($lengua);
-					?>
-	  </div>
+			<?php
+			lista_de_eventos($lengua);
+			?>
+	    </div>
 
 		<div id='main'>
 			<h1>&Aacute;ngel Faraldo</h1>
@@ -36,47 +36,53 @@
 				about_me($lengua);
 				?>
 
-				<div id="side2">
-					<?php
-					mi_obra($lengua);
-					?>
+			<div id="side2">
+				<?php
+				videos($lengua);
+				?>
 
-					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/19287891" width="250" height="140" frameborder="0"></iframe></div>
-
+				<div class="aspect-ratio">
+					<iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe>
 				</div>
 
-				<div id="side2">
-					<?php
-					mi_obra($lengua);
-					?>
+				<div class="aspect-ratio">
+					<iframe src="//player.vimeo.com/video/19287891" width="250" height="140" frameborder="0"></iframe>
+				</div>
+			</div>
 
-					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/95139621" width="250" height="140" frameborder="0"><iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe></iframe></div>
-					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe></div>
+			<div id="side2">
+				<?php
+				fotos($lengua);
+				?>
 
+				<div class="aspect-ratio">
+					<iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe>
 				</div>
 
-				<div id="side2">
-					<?php
-					mi_obra($lengua);
-					?>
-
-					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/95139621" width="250" height="140" frameborder="0"><iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe></iframe></div>
-					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe></div>
-					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/19287891" width="250" height="140" frameborder="0"></iframe></div>
-
+				<div class="aspect-ratio">
+					<iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe>
 				</div>
 
+				<div class="aspect-ratio">
+					<iframe src="//player.vimeo.com/video/19287891" width="250" height="140" frameborder="0"></iframe>
+				</div>
+			</div>
 
+			<div id="side2">
+				<?php
+				musica($lengua);
+				?>
 
-			<?php
-
+				<div class="aspect-ratio">
+					<iframe  style="border: 0; width: 200px; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=1947005916/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" frameborder="0" width="50%" height="100%"></iframe>
+				</div>
+			</div>
+		</div>
+		<?php
 			//<h3>City Sondols</h3>
 			// <img class="pic" src="pics/pic2.jpg">
+			//mi_contacto($lengua);
 			?>
-
-		<?php
-		mi_contacto($lengua);
-		?>
 
 		<hr>
 			<div id=pie>
