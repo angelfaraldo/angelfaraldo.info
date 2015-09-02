@@ -4,18 +4,18 @@
   <head>
 		<title>&Aacute;ngel Faraldo</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<?php 
+		<?php
 		include 'functions.php';
 		?>
   </head>
-		
+
 	<body>
 		<div id='lang'>
-			<a href="index.php?lengua=EN">english</a> 
-			<a href="index.php?lengua=ES">espa&ntilde;ol</a> 
+			<a href="index.php?lengua=EN">english</a>
+			<a href="index.php?lengua=ES">espa&ntilde;ol</a>
 			<a href="index.php?lengua=GA">galego</a>
 		</div>
-		
+
 		<?php;
 		if(empty($_GET['lengua'])){
 				$lengua = 'EN';}
@@ -23,42 +23,65 @@
 			$lengua = $_GET['lengua'];
 		}
 		?>
-		
+
 		<div id="side">
 					<?php
 					lista_de_eventos($lengua);
 					?>
 	  </div>
-		
+
 		<div id='main'>
 			<h1>&Aacute;ngel Faraldo</h1>
 				<?php
 				about_me($lengua);
-				mi_obra($lengua)
 				?>
-			
-			<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/95139621" width="500" height="281" frameborder="0"></iframe></div>
-			<br>
-			<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/32861140" width="500" height="281" frameborder="0"></iframe></div>
-			<br>
-			<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/19287891" width="500" height="281" frameborder="0"></iframe></div>
-			
-			
-			
-			<?php		
-			
+
+				<div id="side2">
+					<?php
+					mi_obra($lengua);
+					?>
+
+					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/19287891" width="250" height="140" frameborder="0"></iframe></div>
+
+				</div>
+
+				<div id="side2">
+					<?php
+					mi_obra($lengua);
+					?>
+
+					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/95139621" width="250" height="140" frameborder="0"><iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe></iframe></div>
+					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe></div>
+
+				</div>
+
+				<div id="side2">
+					<?php
+					mi_obra($lengua);
+					?>
+
+					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/95139621" width="250" height="140" frameborder="0"><iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe></iframe></div>
+					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/32861140" width="250" height="140" frameborder="0"></iframe></div>
+					<div class="aspect-ratio"><iframe src="//player.vimeo.com/video/19287891" width="250" height="140" frameborder="0"></iframe></div>
+
+				</div>
+
+
+
+			<?php
+
 			//<h3>City Sondols</h3>
-			// <img class="pic" src="pics/pic2.jpg"> 
+			// <img class="pic" src="pics/pic2.jpg">
 			?>
 
-		<?php 
+		<?php
 		mi_contacto($lengua);
 		?>
-		
+
 		<hr>
 			<div id=pie>
 				<img class="foot" alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"/>
 			</div>
-		</div>	
+		</div>
 	</body>
 </html>
