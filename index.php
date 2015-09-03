@@ -41,10 +41,35 @@
 				musica($lengua);
 				?>
 
-				<div class="aspect-ratio">
-					<iframe  style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=1947005916/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" frameborder="0" width="100%" height="100%"></iframe>
+				<div class="aspect-ratio-2">
+					<!--I miss you too -->
+					<iframe style="border: 0; width: 100%; height: 95%;" src="https://bandcamp.com/EmbeddedPlayer/album=1947005916/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless></iframe>
 				</div>
+
+				<div class="aspect-ratio-2">
+					<!--scelsi remix -->
+					<iframe style="border: 0; width: 100%; height: 95%;" src="https://bandcamp.com/EmbeddedPlayer/album=1187879847/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless></iframe>
+				</div>
+
+				<div class="aspect-ratio-2">
+					<!--ademen -->
+					<iframe style="border: 0; width: 100%; height: 95%;" src="http://bandcamp.com/EmbeddedPlayer/track=1919132240/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless></iframe>
+				</div>
+
+
+				<div class="aspect-ratio-2">
+					<!--I miss you -->
+					<iframe style="border: 0; width: 100%; height: 95%;"
+					src="https://bandcamp.com/EmbeddedPlayer/album=2869580117/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless></iframe>
+				</div>
+
+				<div class="aspect-ratio-2">
+					<!--Villa Ockenburg -->
+					<iframe style="border: 0; width: 100%; height: 95%;" src="https://bandcamp.com/EmbeddedPlayer/album=1943385296/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless></iframe>
+				</div>
+
 			</div>
+
 
 
 			<div id="col_video">
@@ -91,29 +116,27 @@
 					<!--FS2a -->
 					<iframe src="//player.vimeo.com/video/18492534" width="100%" height="100%" frameborder="0"></iframe>
 				</div>
-
 			</div>
 
 			<div id="col_pictures">
 				<?php
-				fotos($lengua);
-				//<h3>City Sondols</h3>
-				// <img class="pic" src="pics/pic2.jpg">
+				fotos($lengua)
 				?>
 
-				<div class="aspect-ratio">
-					<iframe src="/pics/CitySondols2.jpeg" width="90%" height="90%" frameborder="0"></iframe>
-					<p>City Sondols</p>
+				<div class="aspect-ratio-3">
+					<img src="/pics/CitySondols2.jpeg"width="100%" height="100%" frameborder="0" alt="City Sondols in The Hague">
+					<note>Testing City Sondols in The Hague. &copy; Matteo Marangoni</note>
 				</div>
 
-				<div class="aspect-ratio">
-					<iframe src="//player.vimeo.com/video/32861140" width="100%" height="100%" frameborder="0"></iframe>
+				<div class="aspect-ratio-3">
+					<img src="/pics/CitySondols2.jpeg"width="100%" height="100%" frameborder="0" alt="City Sondols in The Hague">
+					<note>&copy; Matteo Marangoni</note>
 				</div>
 
-				<div class="aspect-ratio">
-					<iframe src="//player.vimeo.com/video/19287891" width="100%" height="100%" frameborder="0"></iframe>
+				<div class="aspect-ratio-3">
+					<img src="/pics/CitySondols2.jpeg"width="100%" height="100%" frameborder="0" alt="City Sondols in The Hague">
+					<note>&copy; Matteo Marangoni</note>
 				</div>
-
 			</div>
 
 			<div id="bottom">
@@ -121,10 +144,10 @@
 				mi_contacto($lengua);
 				?>
 			</div>
-			
+
 			<div id="foot">
 				<hr>
-				<img alt="Creative Commons License" style="border:0; width:75px; height:15px" src="http://i.creativecommons.org/l/by/4.0/80x15.png"/>
+				<img alt="Creative Commons License" style="border:0; width:75px; height:15px" src="http://i.creativecommons.org/l/by/4.0/80x15.png"/><note> except where otherwise noted.</note>
 			</div>
 		</div>
 	</body>
