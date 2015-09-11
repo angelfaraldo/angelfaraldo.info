@@ -41,10 +41,27 @@
 				musica($lengua);
 				?>
 
-				<!--I miss you too -->
+				<!--meta-no-input-mixer -->
+				<div class="aspect-ratio-music">
+					<iframe style="border: 0; width: 100%; height: 95%;" src="https://bandcamp.com/EmbeddedPlayer/album=2632189927/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless></iframe>
+				</div>
+
+
+				<!--no-input-mixer -->
+				<div class="aspect-ratio-music">
+					<iframe style="border: 0; width: 100%; height: 95%;" src="https://bandcamp.com/EmbeddedPlayer/album=4095608676/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless></iframe>
+				</div>
+
+
+				<!--visiones -->
+				<div class="aspect-ratio-music">
+					<iframe style="border: 0; width: 100%; height: 95%;" src="https://bandcamp.com/EmbeddedPlayer/album=2055360899/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless></iframe>
+				</div>
+
+				<!--I miss you too
 				<div class="aspect-ratio-music">
 					<iframe style="border: 0; width: 100%; height: 95%;" src="https://bandcamp.com/EmbeddedPlayer/album=1947005916/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless></iframe>
-				</div>
+				</div>-->
 
 				<!--scelsi remix -->
 				<div class="aspect-ratio-music">
