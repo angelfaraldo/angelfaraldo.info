@@ -32,9 +32,6 @@
 
 		<div id='main'>
 			<h1>&Aacute;ngel Faraldo</h1>
-				<?php
-				about_me($lengua);
-				?>
 
 			<div id="col_music">
 				<?php
@@ -130,11 +127,10 @@
 					<note>with Yolanda Uriz. &copy; Gemma Llorens</note>
 				</div>
 
-				<!--
 				<div class="aspect-ratio-pics">
-					<img src="/pics/Angel-by_Mauro_Sanin-960x640.jpg" width="100%" height="100%" frameborder="0>
-					<note>&copy; Mauro San&iacute;n</note>
-				</div>-->
+					<img src="/pics/Angel-by_Mauro_Sanin-960x640.jpg" width="100%" height="100%" frameborder="0">
+					<note>&copy; Mauro San&iacute;n</note>	
+				</div>
 			</div>
 
 
@@ -186,6 +182,10 @@
 
 
 			<div id="bottom">
+				<?php
+				about_me($lengua);
+				?>
+
 				<?php
 				mi_contacto($lengua);
 				?>

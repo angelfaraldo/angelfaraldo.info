@@ -126,11 +126,25 @@ h1 {
 	font-variant: normal;
 	text-transform: capitalize;
 	position:relative;
+	margin-bottom: 6px;
 	top: 0px;
 	left: 0px;
 }
 
 h2 {
+	padding: 2px 2px 2px 5px;
+	color: #dddddd;
+	background-color: #555555;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: lowercase;
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+
+h3 {
 	padding: 2px 2px 2px 5px;
 	color: #dddddd;
 	background-color: #555555;
