@@ -22,7 +22,8 @@ function lista_de_eventos($lang='EN'){
 			if ($row['link'] != NULL) {
 				if ($year <= substr($row['fecha'],0,4) AND $month <= substr($row['fecha'],5,7)) { //solo filtra por año y mes!
 					echo utf8_encode("<ps2><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</strong></a>");
-  					echo utf8_encode(" " . $row['evento'] . ". " . $row['venue'] . " (" .$row['town'] . "). </ps2>");
+  					echo utf8_encode(" " . $row['type'] . " - " . $row['evento'] . " @ "  . $row['venue'] . 
+  						" (" . $row['town'] . "). <ns2>" . $row['description'] . " </ns2></ps2>");
 
 				}
 				else {
