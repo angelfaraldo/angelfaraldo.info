@@ -2,45 +2,37 @@
 
 body {
 	position:relative;
-	background-color: #DDDDDD;
-	font-family: monospace;
-	letter-spacing: -1px;
+	background-color: #FFFFFF;
+	font-family: sans-serif;
+	letter-spacing: 1px;
 	z-index:0;
 }
 
-#lang {
+/*#lang {
 	position:relative;
 	float: right;
-	padding: 0px 12px;
+	padding: 0px 0px 0px 12px;
 	font-weight: bold;
 	text-transform: uppercase;
 	z-index:3;
 }
 
+*/
+
 #main {
-	background-color: #DDDDDD;
-	position: absolute;
+	background-color: #FFFFFF;
+	position: relative;
 	padding: 10px;
-	margin-top: -10px;
-	margin-left: 275px;
-	margin-right: 0px;
-	min-width: 450px;
+	margin-top: 0px;
+	margin-left: 200px;
+	margin-right: 200px;
+	min-width: 1024px;
+	max-width: 1024px;
 	float: left;
 	z-index:1;
 }
 
-#side_events {
-	position: absolute;
-	padding: 10px 10px 30px 15px;
-	margin-top: -10px;
-	margin-left: -10px;
-	float: left;
-	background-color: #FFFFFF;
-	width: 260px;
-	z-index:2;
-}
-
-#col_music {
+/* #col_music {
 	position: relative;
 	padding: 0px 1% 0px 0px;
 	float: left;
@@ -60,6 +52,7 @@ body {
 	float: right;
 	width: 48%;
 }
+*/
 
 #bottom {
 	position: relative;
@@ -70,7 +63,7 @@ body {
 
 #foot {
 	position: relative;
-	background-color: #DDDDDD;
+	background-color: #FFFFFF;
 	padding: 0px 0px 0px 0px;
 	float: left;
 	width: 100%;

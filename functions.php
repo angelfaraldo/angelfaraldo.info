@@ -11,11 +11,11 @@ function lista_de_eventos($lang='EN'){
 	$result = mysqli_query($con,"SELECT * FROM EVENTS ORDER BY FECHA DESC");
 
 	if ($lang == 'ES'){
-		echo utf8_encode("<h3>noticias y eventos</h3>");}
+		echo utf8_encode("<h2>eventos</h2>");}
 	if ($lang == 'GA'){
-		echo utf8_encode("<h3>novas e eventos</h3>");}
+		echo utf8_encode("<h2>eventos</h2>");}
 	if ($lang == 'EN'){
-		echo utf8_encode("<h3>news and events</h3>");}
+		echo utf8_encode("<h2>events</h2>");}
 
 	while($row = mysqli_fetch_array($result)) {
 		if ($row['lang'] == $lang) {
@@ -23,21 +23,26 @@ function lista_de_eventos($lang='EN'){
 				if ($year <= substr($row['fecha'],0,4) AND $month <= substr($row['fecha'],5,7)) { //solo filtra por año y mes!
 					echo utf8_encode("<ps2><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</strong></a>");
   					echo utf8_encode(" " . $row['evento'] . ". " . $row['venue'] . " (" .$row['town'] . "). </ps2>");
+
 				}
 				else {
 					echo utf8_encode("<ps1><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</strong></a>");
 					echo utf8_encode(" " . $row['evento'] . ". " . $row['venue'] . " (" .$row['town'] . "). </ps1>");
+					echo ("\n");
+
 				}
 			}
 			else {
 				echo utf8_encode("<ps1><strong>" . $row['fecha'] . " </strong>" . $row['evento'] . ". " . $row['venue'] . " (" .$row['town'] . "). </ps1>");
+				echo ("\n");
 			}
+			echo utf8_encode("\n");
+
 		}
 	}
 
 	mysqli_close($con);
 }
-
 
 function about_me($lang='EN'){
 	if ($lang == 'ES'){
