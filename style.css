@@ -3,8 +3,8 @@
 body {
 	position:relative;
 	background-color: #FFFFFF;
-	font-family: serif;
-	letter-spacing: 1px;
+	font-family: monospace;
+	letter-spacing: -0.5px;
 	z-index:0;
 }
 
@@ -20,39 +20,30 @@ body {
 */
 
 #main {
-	background-color: #FFFFFF;
+	width: 1200px;
 	position: relative;
+	background-color: #FFFFFF;
 	padding: 10px;
 	margin-top: 0px;
-	margin-left: 200px;
-	margin-right: 200px;
-	min-width: 1024px;
-	max-width: 1024px;
-	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	float: center;
 	z-index:1;
 }
 
-/* #col_music {
-	position: relative;
-	padding: 0px 1% 0px 0px;
-	float: left;
-	width: 19%;
-}
-
-#col_pictures {
+#col_picture {
 	position: relative;
 	padding: 0px 0% 0px 0px;
 	float: left;
-	width: 31%;
+	width: 50%;
 }
 
-#col_video {
+#col_events {
 	position: relative;
-	padding: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
 	float: right;
-	width: 48%;
+	width: 49%;
 }
-*/
 
 #bottom {
 	position: relative;
@@ -149,36 +140,39 @@ h3 {
 
 p {
 	color: #999999;
-	font-size: 100%;
+	font-size: 115%;
 	text-align: justify;
 	margin-left: 5;
 	margin-right: 5;
 }
 
 ps1 {
+	line-height: 1.4;
 	padding: 0px 0px 0px 0px;
 	color: #666666;
-	font-size: 90%;
+	font-size: 105%;
 }
 
 ps2 {
+	line-height: 1.4;
 	padding: 0px 0px 0px 0px;
 	color: #DDDDDD;
-	font-size: 90%;
+	font-size: 105%;
 	background-color: #888888;
 }
 
 
 ns1 {
+	line-height: 1.4;
 	color: #666666;
-	font-size: 75%;
+	font-size: 90%;
 	font-style: italic;
 	font-variant: normal;
 }
 
 ns2 {
 	color: #DDDDDD;
-	font-size: 75%;
+	font-size: 90%;
 	font-style: italic;
 	font-variant: normal;
 	background-color: #888888;
@@ -186,8 +180,9 @@ ns2 {
 
 note {
 	color: #666666;
-	font-size: 75%;
+	font-size: 90%;
 	font-style: normal;
+	text-align: right;
 	font-variant: normal;
 }
 

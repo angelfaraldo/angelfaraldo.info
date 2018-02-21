@@ -20,19 +20,24 @@
 		?>
 
 		<div id='main'>
+			
 			<h1>&Aacute;ngel Faraldo</h1>
 
-			<div class="aspect-ratio-pics">
-					<img src="/pics/test_web.jpg" width="100%" height="100%" frameborder="0">
-					<note>"Mesa y Objetos", Festival Vertixe Vigo, November 2016 (&copy; Nacho Barcia)</note>
+			<div id="col_events">
+		
+				<?php
+				lista_de_eventos($lengua);
+				?>
 				</div>
 
-			<div id="bottom">
-		
-			<?php
-			lista_de_eventos($lengua);
-			?>
+
+			<div id="col_picture">
+			
+				<img src="/pics/mesa.jpg" width="100%" height="100%" frameborder="0">
+				<note> photo &copy; Emilio Fonseca</note>
+			
 			</div>
+
 
 			<div id="bottom">
 

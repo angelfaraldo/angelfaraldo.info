@@ -15,29 +15,29 @@ function lista_de_eventos($lang='EN'){
 	if ($lang == 'GA'){
 		echo utf8_encode("<h2>eventos</h2>");}
 	if ($lang == 'EN'){
-		echo utf8_encode("<h2>events</h2>");}
+		echo utf8_encode("<h2>news & events</h2>");}
 
 	while($row = mysqli_fetch_array($result)) {
 		if ($row['lang'] == $lang) {
 			if ($row['link'] != NULL) {
 				if ($year <= substr($row['fecha'],0,4) AND $month <= substr($row['fecha'],5,7)) { //solo filtra por año y mes!
-					echo utf8_encode("<ps2><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</strong></a>");
-  					echo utf8_encode(" " . $row['type'] . " - " . $row['evento'] . " @ "  . $row['venue'] . 
-  						" (" . $row['town'] . "). <ns2>" . $row['description'] . " </ns2></ps2>");
-
+					echo utf8_encode("<ps><ps2><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</a>");
+  					echo utf8_encode(" " . $row['type'] . "</strong> " . $row['evento'] . " @ "  . $row['venue'] . 
+  						" (" . $row['town'] . ") <ns2>" . $row['description'] . " </ns2></ps2> <ps1>  </ps1>");
 				}
+
 				else {
-					echo utf8_encode("<ps1><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</strong></a>");
-					echo utf8_encode(" " . $row['evento'] . ". " . $row['venue'] . " (" .$row['town'] . "). </ps1>");
-					echo ("\n");
-
+					echo utf8_encode("<ps1><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</a>");
+					echo utf8_encode(" " . $row['type'] . "</strong> " . $row['evento'] . " @ "  . $row['venue'] . 
+  						" (" . $row['town'] . ") <ns1>" . $row['description'] . " </ns1></ps1>");
 				}
 			}
+
 			else {
-				echo utf8_encode("<ps1><strong>" . $row['fecha'] . " </strong>" . $row['evento'] . ". " . $row['venue'] . " (" .$row['town'] . "). </ps1>");
-				echo ("\n");
+				echo utf8_encode("<ps1><strong>" . $row['fecha'] . " </strong>" . $row['type'] . " " . $row['evento'] . " @ "  . $row['venue'] . 
+  						" (" . $row['town'] . ") <ns1>" . $row['description'] . " </ns1></ps1>");
 			}
-			echo utf8_encode("\n");
+			echo utf8_encode("<ps1> // </ps1>");
 
 		}
 	}
