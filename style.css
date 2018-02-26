@@ -2,28 +2,17 @@
 
 body {
 	position:relative;
-	background-color: #FFFFFF;
+	background-color: #000000;
 	font-family: monospace;
 	letter-spacing: -0.5px;
 	z-index:0;
 }
 
-/*#lang {
-	position:relative;
-	float: right;
-	padding: 0px 0px 0px 12px;
-	font-weight: bold;
-	text-transform: uppercase;
-	z-index:3;
-}
-
-*/
-
 #main {
 	width: 1200px;
 	position: relative;
-	background-color: #FFFFFF;
-	padding: 10px;
+	background-color: #000000;
+	padding: -10px;
 	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
@@ -33,7 +22,7 @@ body {
 
 #col_picture {
 	position: relative;
-	padding: 0px 0% 0px 0px;
+	padding: 0px 0% 10px 0px;
 	float: left;
 	width: 50%;
 }
@@ -47,21 +36,33 @@ body {
 
 #bottom {
 	position: relative;
-	padding: 0px 0px 0px 0px;
+	padding: -10px;
 	float: left;
 	width: 100%;
 }
 
 #foot {
 	position: relative;
-	background-color: #FFFFFF;
-	padding: 0px 0px 0px 0px;
+	background-color: #000000;
+	padding: 0px 0px 50px 0px;
 	float: left;
 	width: 100%;
 }
 
 
 /* FLOATING ELEMENTS */
+
+.comment {
+}
+
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+
+}
 
 .aspect-ratio-music {
 	position: relative;
@@ -104,8 +105,8 @@ body {
 
 h1 {
 	padding: 2px 2px 2px 5px;
-	color: #DDDDDD;
-	background-color: #555555;
+	color: #FFFFFF;
+	background-color: #333333;
 	font-style: normal;
 	font-variant: normal;
 	text-transform: capitalize;
@@ -117,8 +118,8 @@ h1 {
 
 h2 {
 	padding: 2px 2px 2px 5px;
-	color: #dddddd;
-	background-color: #555555;
+	color: #FFFFFF;
+	background-color: #333333;
 	font-style: normal;
 	font-variant: normal;
 	text-transform: lowercase;
@@ -130,8 +131,8 @@ h2 {
 
 h3 {
 	padding: 2px 2px 2px 5px;
-	color: #dddddd;
-	background-color: #555555;
+	color: #FFFFFF;
+	background-color: #333333;
 	font-style: normal;
 	font-variant: normal;
 	text-transform: lowercase;
@@ -139,7 +140,7 @@ h3 {
 }
 
 p {
-	color: #999999;
+	color: #AAAAAA;
 	font-size: 115%;
 	text-align: justify;
 	margin-left: 5;
@@ -149,40 +150,45 @@ p {
 ps1 {
 	line-height: 1.4;
 	padding: 0px 0px 0px 0px;
-	color: #666666;
+	color: #AAAAAA;
 	font-size: 105%;
+}
+
+psw {
+	 line-height: 1.4;
+	 padding: 0px 0px 0px 0px;
+	 color: #DDDDDD;
+	 font-size: 105%;
 }
 
 ps2 {
 	line-height: 1.4;
 	padding: 0px 0px 0px 0px;
-	color: #DDDDDD;
+	color: #CCCCCC;
 	font-size: 105%;
-	background-color: #888888;
+	background-color: #666666;
 }
 
 
 ns1 {
 	line-height: 1.4;
-	color: #666666;
+	color: #888888;
 	font-size: 90%;
 	font-style: italic;
 	font-variant: normal;
 }
 
 ns2 {
-	color: #DDDDDD;
+	color: #BBBBBB;
 	font-size: 90%;
 	font-style: italic;
 	font-variant: normal;
-	background-color: #888888;
 }
 
 note {
-	color: #666666;
+	color: #888888;
 	font-size: 90%;
 	font-style: normal;
-	text-align: right;
 	font-variant: normal;
 }
 
@@ -191,14 +197,14 @@ note {
 
 a:link {
 	padding: 0px 3px 0px 3px;
-	color: #AAAAAA;
+	color: #000000;
 	text-decoration: none;
 	background-color:#ffdd00;
 }
 
 a:visited {
 	padding: 0px 3px 0px 3px;
-	color: #AAAAAA;
+	color: #000000;
 	text-decoration: line-through;
 	background-color:#ffdd00;
 }
@@ -206,27 +212,5 @@ a:visited {
 a:hover {
 	padding: 0px 3px 0px 3px;
 	color: #999999;
-	font-weight:bold;
-}
-
-/* LANGUAGE PAGE LINKS*/
-
-#lang a:link {
-	background-color: transparent;
-	text-transform: uppercase;
-	color: #111111;
-	text-decoration: none;
-}
-
-#lang a:visited {
-	background-color: transparent;
-	text-transform: uppercase;
-	color: #111111;
-	text-decoration: none;
-}
-
-#lang a:hover {
-	color: #111111;
-	background-color: #ffdd00;
-	text-transform: uppercase;
+	
 }
