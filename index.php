@@ -25,20 +25,25 @@
 			
 			<h1>&Aacute;ngel Faraldo</h1>
 
+
+
 				<div id="col_picture">
+				<p></p>
+
 			
 				<img src="/pics/mesa.jpg" width="100%" height="100%" frameborder="0">
 				<note> photo &copy; Emilio Fonseca</note>
 				<p></p>
 
-				<iframe style="border: 0; width: 600px; height: 208px;" allow="autoplay" src="https://bandcamp.com/EmbeddedPlayer/album=2632189927/size=large/bgcol=000000/linkcol=ffffff/artwork=none/track=1256381544/transparent=false/" seamless><a href="http://angelfaraldo.bandcamp.com/album/meta-mesa"></a></iframe>
-				
-				<p>More music in <a href="http://angelfaraldo.bandcamp.com"> angelfaraldo.bandcamp.com</a></p>
-				<p>Audiovisual documentation in <a href="https://vimeo.com/angelfaraldo"> vimeo.com/angelfaraldo</a></p>
+				<!-- <iframe style="border: 0; width: 600px; height: 208px;" allow="autoplay" src="https://bandcamp.com/EmbeddedPlayer/album=2632189927/size=large/bgcol=000000/linkcol=ffffff/artwork=none/track=1256381544/transparent=false/" seamless><a href="http://angelfaraldo.bandcamp.com/album/meta-mesa"></a></iframe>
+				--> 
+				<p>Faraldo's music resides in <a href="http://angelfaraldo.bandcamp.com"> angelfaraldo.bandcamp.com</a></p>
+				<p>Audiovisual documentation available in <a href="https://vimeo.com/angelfaraldo"> vimeo.com/angelfaraldo</a></p>
 
 			</div>
 
 			<div id="col_events">
+				<p></p>
 
 				<?php;
 				if (empty($_GET['eventlist'])) {$eventlist = 'more';}

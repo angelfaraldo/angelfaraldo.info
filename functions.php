@@ -23,18 +23,17 @@ function lista_de_eventos($lang='EN'){
 		if ($row['lang'] == $lang) {
 			if ($row['link'] != NULL) {
 				if ($year <= substr($row['fecha'],0,4) AND $month <= substr($row['fecha'],5,7)) { //solo filtra por año y mes!
-					$casa .= utf8_encode("<ps2><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</a><psw> " . $row['type'] . "</strong></psw> " . $row['evento'] . " @ "  . $row['venue'] . " (" . $row['town'] . ") <ns2>" . $row['description'] . "</ps2></ns2>");
-
+					$casa .= utf8_encode("<ps2><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</a></strong> <psw>" . $row['type'] . "</psw> " . $row['evento'] . " @ "  . $row['venue'] . " (" . $row['town'] . ") <note>" . $row['description'] . "</note> // </ps2>");
 				}
 
 				else {
-					$casa .= utf8_encode("<ps1><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</a><psw> " . $row['type'] . "</psw></strong> " . $row['evento'] . " @ "  . $row['venue'] . " (" . $row['town'] . ") <ns1>" . $row['description'] . "</ns1></ps1>");
+					$casa .= utf8_encode("<ps1><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</a></strong> <psw>" . $row['type'] . "</psw> " . $row['evento'] . " @ "  . $row['venue'] . " (" . $row['town'] . ") <note>" . $row['description'] . "</note> // </ps1>");
 				}
 			}
 
 			else {
-				$casa .= utf8_encode("<ps1><strong>" . $row['fecha'] . "<psw> " . $row['type'] . "</psw></strong> " . $row['evento'] . " @ "  . $row['venue'] . 
-  						" (" . $row['town'] . ") <ns1>" . $row['description'] . "</ns1></ps1>");
+				$casa .= utf8_encode("<ps1><strong>" . $row['fecha'] . "</strong><psw> " . $row['type'] . "</psw> " . $row['evento'] . " @ "  . $row['venue'] . 
+  						" (" . $row['town'] . ") <note>" . $row['description'] . "</note> // </ps1>");
 			}
 		}
 	}
@@ -69,26 +68,26 @@ function lista_de_eventos2($lang='EN'){
 		if ($row['lang'] == $lang) {
 			if ($row['link'] != NULL) {
 				if ($year <= substr($row['fecha'],0,4) AND $month <= substr($row['fecha'],5,7)) { //solo filtra por año y mes!
-					$casa .= utf8_encode("<ps2><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</a></strong><psw> " . $row['type'] . "</psw> " . $row['evento'] . " @ "  . $row['venue'] . " (" . $row['town'] . ") <ns2>" . $row['description'] . " </ns2></ps2>");
-
+					$casa .= utf8_encode("<ps2><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</a></strong> <psw>" . $row['type'] . "</psw> " . $row['evento'] . " @ "  . $row['venue'] . " (" . $row['town'] . ") <note>" . $row['description'] . "</note> // </ps2>");
 				}
 
 				else {
-					$casa .= utf8_encode("<ps1><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</a></strong><psw> " . $row['type'] . "</psw> " . $row['evento'] . " @ "  . $row['venue'] . " (" . $row['town'] . ") <ns1>" . $row['description'] . " </ns1></ps1>");
+					$casa .= utf8_encode("<ps1><strong>" . "<a href=" . $row['link'] . ">" .  $row['fecha'] . "</a></strong> <psw>" . $row['type'] . "</psw> " . $row['evento'] . " @ "  . $row['venue'] . " (" . $row['town'] . ") <note>" . $row['description'] . "</note> // </ps1>");
 				}
 			}
 
 			else {
 				$casa .= utf8_encode("<ps1><strong>" . $row['fecha'] . "</strong><psw> " . $row['type'] . "</psw> " . $row['evento'] . " @ "  . $row['venue'] . 
-  						" (" . $row['town'] . ") <ns1>" . $row['description'] . " </ns1></ps1>");
+  						" (" . $row['town'] . ") <note>" . $row['description'] . "</note> // </ps1>");
 			}
 		}
 	}
 
 	mysqli_close($con);
 
-	echo substr($casa,0,4480);
+	echo substr($casa,0,2300);
 }
+
 
 
 function about_me($lang='EN'){

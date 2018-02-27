@@ -3,8 +3,8 @@
 body {
 	position:relative;
 	background-color: #000000;
-	font-family: monospace;
-	letter-spacing: -0.5px;
+	font-family: Courier, monospace;
+	letter-spacing: -0.3px;
 	z-index:0;
 }
 
@@ -31,7 +31,7 @@ body {
 	position: relative;
 	padding: 0px 0px 10px 0px;
 	float: right;
-	width: 49%;
+	width: 48%;
 }
 
 #bottom {
@@ -49,7 +49,6 @@ body {
 	width: 100%;
 }
 
-
 /* FLOATING ELEMENTS */
 
 .comment {
@@ -59,54 +58,17 @@ a.morelink {
 	text-decoration:none;
 	outline: none;
 }
+
 .morecontent span {
 	display: none;
-
 }
-
-.aspect-ratio-music {
-	position: relative;
-    width: 100%;
-	height: 0;
-	padding-bottom: 100%;
-}
-
-.aspect-ratio-music iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-
-.aspect-ratio-pics {
-	position: relative;
-  	padding-bottom: 3%;
-	float: right;
-}
-
-.aspect-ratio-video {
-	position: relative;
-  	width: 100%;
-	height: 0;
-  	padding-bottom: 64%; /* resulta en un zoom del video o imagen; relacionado con height en .aspect-ratio iframe*/
-}
-
-.aspect-ratio-video iframe {
-  	position: absolute;
- 	width: 100%;
- 	height: 97%; /*relacionado con padding-bottom-- espacio vertical entre imágenes de una columna*/
- 	left: 0;
- 	top: 0;
-}
-
 
 /* TEXT */
 
 h1 {
 	padding: 2px 2px 2px 5px;
 	color: #FFFFFF;
-	background-color: #333333;
+	background-color: #555555;
 	font-style: normal;
 	font-variant: normal;
 	text-transform: capitalize;
@@ -119,7 +81,7 @@ h1 {
 h2 {
 	padding: 2px 2px 2px 5px;
 	color: #FFFFFF;
-	background-color: #333333;
+	background-color: #555555;
 	font-style: normal;
 	font-variant: normal;
 	text-transform: lowercase;
@@ -132,7 +94,7 @@ h2 {
 h3 {
 	padding: 2px 2px 2px 5px;
 	color: #FFFFFF;
-	background-color: #333333;
+	background-color: #555555;
 	font-style: normal;
 	font-variant: normal;
 	text-transform: lowercase;
@@ -141,7 +103,7 @@ h3 {
 
 p {
 	color: #AAAAAA;
-	font-size: 115%;
+	font-size: 100%;
 	text-align: justify;
 	margin-left: 5;
 	margin-right: 5;
@@ -151,42 +113,27 @@ ps1 {
 	line-height: 1.4;
 	padding: 0px 0px 0px 0px;
 	color: #AAAAAA;
-	font-size: 105%;
+	font-size: 95%;
 }
 
 psw {
 	 line-height: 1.4;
+	 text-transform: uppercase;
 	 padding: 0px 0px 0px 0px;
 	 color: #DDDDDD;
-	 font-size: 105%;
+	 font-size: 95%;
 }
 
 ps2 {
 	line-height: 1.4;
 	padding: 0px 0px 0px 0px;
-	color: #CCCCCC;
-	font-size: 105%;
-	background-color: #666666;
-}
-
-
-ns1 {
-	line-height: 1.4;
-	color: #888888;
-	font-size: 90%;
-	font-style: italic;
-	font-variant: normal;
-}
-
-ns2 {
-	color: #BBBBBB;
-	font-size: 90%;
-	font-style: italic;
-	font-variant: normal;
+	color: #AAAAAA;
+	font-size: 95%;
+	background-color: #000000;
 }
 
 note {
-	color: #888888;
+	color: #777777;
 	font-size: 90%;
 	font-style: normal;
 	font-variant: normal;
