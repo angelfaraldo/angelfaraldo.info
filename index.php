@@ -37,8 +37,8 @@
 
 				<!-- <iframe style="border: 0; width: 600px; height: 208px;" allow="autoplay" src="https://bandcamp.com/EmbeddedPlayer/album=2632189927/size=large/bgcol=000000/linkcol=ffffff/artwork=none/track=1256381544/transparent=false/" seamless><a href="http://angelfaraldo.bandcamp.com/album/meta-mesa"></a></iframe>
 				--> 
-				<p>Faraldo's music resides in <a href="http://angelfaraldo.bandcamp.com"> angelfaraldo.bandcamp.com</a></p>
-				<p>Audiovisual documentation available in <a href="https://vimeo.com/angelfaraldo"> vimeo.com/angelfaraldo</a></p>
+				<p>Faraldo's music resides in <a href="http://faraldo.bandcamp.com"> faraldo.bandcamp.com</a></p>
+				<p>Audiovisual documentation available in <a href="https://vimeo.com/faraldo"> vimeo.com/faraldo</a></p>
 
 			</div>
 
